@@ -6,6 +6,6 @@ module.exports = {
             throw new Error('An url must be provided');
         }
 
-        return `${GOOGLE_API_URL}&chl="${data}"${height && width ? "&chs=" + height + "x" + width :"&chs=200x200"}`;
+        return `${GOOGLE_API_URL}&chl="${url}"${height && width ? "&chs=" + height + "x" + width :"&chs=200x200"}`;
     }
 }
