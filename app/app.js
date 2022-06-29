@@ -29,7 +29,7 @@ client.once('ready', () => {
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return; // check that the interaction is a command
 
-    const { command } = client.commands.get(interaction.commandName);
+    const command = client.commands.get(interaction.commandName);
 
     if (!command) return; // check that command is valid
 
@@ -40,3 +40,5 @@ client.on('interactionCreate', async interaction => {
         await interaction.reply({ content: `There was an error while executing this command`, ephemeral: true });
     }
 });
+
+client.login(token);
