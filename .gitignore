@@ -1,3 +1,6 @@
+# Sensible data
+local_config.json
+
 # Logs
 logs
 *.log
